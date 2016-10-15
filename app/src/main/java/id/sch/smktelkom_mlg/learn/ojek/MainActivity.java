@@ -30,6 +30,9 @@ public abstract class MainActivity extends AppCompatActivity implements Compound
         CbDekat = (CheckBox) findViewById(R.id.checkBox2);
         rgStatus = (RadioGroup) findViewById(R.id.radioGroup2);
 
+        rgStatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        tvHasil = (TextView) findViewById(R.id.textView2);
+
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

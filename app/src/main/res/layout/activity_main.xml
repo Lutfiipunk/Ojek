@@ -8,65 +8,70 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.learn.ojek.MainActivity">
+    tools:context="id.sch.smktelkom_mlg.learn.ojek.MainActivity"
+    android:background="@color/background_material_light"
+    android:weightSum="1">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@mipmap/ic_launcher"
-        android:layout_alignBottom="@+id/textView6" />
+        android:id="@+id/imageView2"
+        android:src="@mipmap/ic_launcher" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup" >
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Judul"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OJEK YUK"
-        android:id="@+id/textView6"
-        android:layout_above="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
+        android:text="Ojek Yuk"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:longClickable="false"
         style="@style/Base.TextAppearance.AppCompat.Headline"
-        android:textColor="#50eb18"
-        android:layout_alignRight="@+id/buttonOK"
-        android:layout_gravity="center_horizontal" />
+        android:textColor="#08fa08" />
 
     <EditText
         android:hint="Nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_above="@+id/editText2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:inputType="numberSigned" />
 
     <EditText
-        android:hint="Lokasi Anda"
+        android:hint="Koordinat Lokasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:inputType="numberSigned"
-        android:layout_above="@+id/radioButton"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/editText2" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/RadioGroupStatus" >
+        android:id="@+id/radioGroup2">
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Motor"
-            android:id="@+id/radioButton3"
+            android:id="@+id/radioButton"
             android:checked="false" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Mobil"
-            android:id="@+id/radioButton4"
+            android:id="@+id/radioButton2"
             android:checked="false" />
 
     </RadioGroup>
@@ -74,41 +79,27 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dalam Kota"
-        android:id="@+id/checkBox2"
-        android:checked="false"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="Jauh"
+        android:id="@+id/checkBox"
+        android:checked="false" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Luar kota"
-        android:id="@+id/checkBox3"
-        android:checked="false"
-        android:layout_above="@+id/checkBox2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="Dekat"
+        android:id="@+id/checkBox2"
+        android:checked="false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="OK"
-        android:id="@+id/buttonOK"
-        android:layout_below="@+id/checkBox2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/button" />
 
     <TextView
-        android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:layout_width="175dp"
+        tools:text="Hasil"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasil"
-        android:id="@+id/tilOY"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/textView2" />
 
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -30,7 +31,7 @@ public abstract class MainActivity extends AppCompatActivity implements Compound
         CbDekat = (CheckBox) findViewById(R.id.checkBox2);
         rgStatus = (RadioGroup) findViewById(R.id.radioGroup2);
 
-        rgStatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
+        rgStatus.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener();
         tvHasil = (TextView) findViewById(R.id.textView2);
 
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
@@ -54,4 +55,7 @@ public abstract class MainActivity extends AppCompatActivity implements Compound
         tvHasil.setText(hasil);
 
     }
+    {
+
+}
 }
